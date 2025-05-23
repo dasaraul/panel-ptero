@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ config('app.name', 'Pterodactyl') }} - @yield('title') | by TAMA EL PABLO</title>
+        <title>{{ config("app.name", "Pterodactyl") }} - @yield("title") | TAMA EL PABLO Professional</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <meta name="_token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,6 +30,8 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="/css/pterodactyl-modern.css?v={{ time() }}">
+        <link rel="stylesheet" href="/css/tama-branding.css?v={{ time() }}">
+        <link rel="stylesheet" href="/css/tama-branding.css?v={{ time() }}">
 
             <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,6 +40,14 @@
         @show
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
+<!-- TAMA EL PABLO Global Video Background -->
+<div class="tama-video-bg" id="video-bg">
+    <div class="video-container">
+        <iframe id="bg-video" data-src="https://www.youtube.com/embed/41cr-O-mW2k?autoplay=1&mute=1&loop=1&playlist=41cr-O-mW2k&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&quality=medium" frameborder="0" allow="autoplay"></iframe>
+    </div>
+    <div class="video-overlay"></div>
+</div>
+<div class="video-toggle" onclick="toggleVideo()"><i class="fa fa-eye"></i></div>
         <div class="wrapper">
             <header class="main-header">
                 <a href="{{ route('index') }}" class="logo">
@@ -162,6 +172,8 @@
                     <strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
                 </div>
                 Copyright Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a>.copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a> | Custom Design by <strong>TAMA EL PABLO</strong>
+                <div class="tama-footer-brand">TAMA EL PABLO Professional</div>
+                <div class="tama-footer-brand">TAMA EL PABLO Professional</div>
             </footer>
         </div>
         @section('footer-scripts')
@@ -176,6 +188,7 @@
             {!! Theme::js('vendor/bootstrap-notify/bootstrap-notify.min.js?t={cache-version}') !!}
             {!! Theme::js('vendor/select2/select2.full.min.js?t={cache-version}') !!}
             {!! Theme::js('js/admin/functions.js?t={cache-version}') !!}
+            <script src="/js/tama-video.js?v={{ time() }}"></script>
             <script src="/js/autocomplete.js" type="application/javascript"></script>
 
             @if(Auth::user()->root_admin)

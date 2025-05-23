@@ -1,0 +1,126 @@
+/* TAMA EL PABLO Additional Branding Styles */
+
+/* Enhanced TAMA EL PABLO Signature */
+.tama-signature-enhanced {
+    position: fixed;
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%) rotate(-90deg);
+    background: linear-gradient(135deg, #00d4ff, #ff6b35);
+    color: white;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    z-index: 1000;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.tama-signature-enhanced:hover {
+    opacity: 1;
+    right: -180px;
+}
+
+/* Loading Screen with TAMA EL PABLO branding */
+.tama-loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.5s ease;
+}
+
+.tama-loading-logo {
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00d4ff, #ff6b35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+.tama-loading-text {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Enhanced header logo */
+.main-header .logo {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-header .logo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    animation: shimmer-logo 3s linear infinite;
+}
+
+@keyframes shimmer-logo {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* Box shadow enhancements */
+.box:hover {
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15) !important;
+}
+
+.stat-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2) !important;
+}
+
+/* Custom button glow effect */
+.btn-primary:hover {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5) !important;
+}
+
+/* Professional toast notifications */
+.tama-toast {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border: 1px solid #00d4ff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: white;
+    font-weight: 500;
+    z-index: 10000;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.tama-toast.show {
+    transform: translateX(0);
+}
+
+.tama-toast::before {
+    content: '⚡';
+    margin-right: 8px;
+    color: #00d4ff;
+}
