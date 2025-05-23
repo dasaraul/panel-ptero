@@ -1,12 +1,10 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ config('app.name', 'Pterodactyl') }} - @yield('title') | TAMA EL PABLO Professional</title>
+        <title>{{ config('app.name', 'Pterodactyl') }} - @yield('title')</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <meta name="_token" content="{{ csrf_token() }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
@@ -20,40 +18,40 @@
         @include('layouts.scripts')
 
         @section('scripts')
-            {!! Theme::css('vendor/select2/select2.min.css?t={cache-version}') !!}
-            {!! Theme::css('vendor/bootstrap/bootstrap.min.css?t={cache-version}') !!}
-            {!! Theme::css('vendor/adminlte/admin.min.css?t={cache-version}') !!}
-            {!! Theme::css('vendor/adminlte/colors/skin-blue.min.css?t={cache-version}') !!}
-            {!! Theme::css('vendor/sweetalert/sweetalert.min.css?t={cache-version}') !!}
-            {!! Theme::css('vendor/animate/animate.min.css?t={cache-version}') !!}
-            {!! Theme::css('css/pterodactyl.css?t={cache-version}') !!}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/select2/select2.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/bootstrap/bootstrap.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/adminlte/admin.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/adminlte/colors/skin-blue.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/sweetalert/sweetalert.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('vendor/animate/animate.min.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::css('css/pterodactyl.css?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
             <link rel="stylesheet" href="/css/pterodactyl-modern.css?v={{ time() }}">
             <link rel="stylesheet" href="/css/tama-branding.css?v={{ time() }}">
 
-            <!--[if lt IE 9]>
+            <[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-            <![endif]-->
         @show
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
         
-        <!-- SIMPLE VIDEO BACKGROUND -->
+        < VIDEO BACKGROUND -->
         <div id="video-background" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; overflow: hidden;">
             <iframe 
-                src="https://www.youtube.com/embed/41cr-O-mW2k?autoplay=1&mute=1&loop=1&playlist=41cr-O-mW2k&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&quality=medium"
-                style="position: absolute; top: 50%; left: 50%; width: 120%; height: 120%; transform: translate(-50%, -50%); filter: brightness(0.15) contrast(1.4) saturate(0.7); border: none; pointer-events: none;"
+                src="https://www.youtube.com/embed/41cr-O-mW2k?autoplay=1&mute=1&loop=1&playlist=41cr-O-mW2k&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&quality=medium&enablejsapi=1"
+                style="position: absolute; top: 50%; left: 50%; width: 120%; height: 120%; transform: translate(-50%, -50%); filter: brightness(0.6) contrast(1.2) saturate(0.8); border: none; pointer-events: none;"
                 frameborder="0" 
-                allow="autoplay; encrypted-media">
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
             </iframe>
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(15, 15, 15, 0.8) 0%, rgba(26, 26, 26, 0.7) 50%, rgba(15, 15, 15, 0.8) 100%); z-index: -1;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(15, 15, 15, 0.4) 0%, rgba(26, 26, 26, 0.3) 50%, rgba(15, 15, 15, 0.4) 100%);"></div>
         </div>
         
-        <!-- VIDEO TOGGLE -->
-        <div onclick="toggleVideoBackground()" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: rgba(0, 0, 0, 0.8); border: 2px solid #00d4ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; color: #00d4ff; font-size: 18px;">
-            <i class="fa fa-eye" id="video-toggle-icon"></i>
+        < VIDEO TOGGLE -->
+        <div onclick="toggleVideo()" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: rgba(0, 0, 0, 0.8); border: 2px solid #00d4ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; color: #00d4ff; font-size: 18px; transition: all 0.3s ease;">
+            <i class="fa fa-eye" id="video-icon"></i>
         </div>
 
         <div class="wrapper">
@@ -77,10 +75,10 @@
                                 </a>
                             </li>
                             <li>
-                                <li><a href="{{ route('index') }}" data-toggle="tooltip" data-placement="bottom" title="Exit Admin Control"><i class="fa fa-server"></i></a></li>
+                                <a href="{{ route('index') }}" data-toggle="tooltip" data-placement="bottom" title="Exit Admin Control"><i class="fa fa-server"></i></a>
                             </li>
                             <li>
-                                <li><a href="{{ route('auth.logout') }}" id="logoutButton" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-sign-out"></i></a></li>
+                                <a href="{{ route('auth.logout') }}" id="logoutButton" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-sign-out"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -165,7 +163,7 @@
                             @foreach (Alert::getMessages() as $type => $messages)
                                 @foreach ($messages as $message)
                                     <div class="alert alert-{{ $type }} alert-dismissable" role="alert">
-                                        {!! $message !!}
+                                        {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) $message ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
                                     </div>
                                 @endforeach
                             @endforeach
@@ -179,49 +177,46 @@
                     <strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}<br />
                     <strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
                 </div>
-                Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a> | Custom Design by <strong>TAMA EL PABLO</strong>
-                <div class="tama-footer-brand">TAMA EL PABLO Professional</div>
+                Copyright &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Pterodactyl Software</a> | <strong>TAMA EL PABLO</strong>
             </footer>
         </div>
         
-        <!-- SIMPLE VIDEO TOGGLE SCRIPT -->
         <script>
-        let videoVisible = true;
-        function toggleVideoBackground() {
+        let videoOn = true;
+        function toggleVideo() {
             const video = document.getElementById('video-background');
-            const icon = document.getElementById('video-toggle-icon');
-            if (videoVisible) {
+            const icon = document.getElementById('video-icon');
+            if (videoOn) {
                 video.style.display = 'none';
                 icon.className = 'fa fa-eye-slash';
-                videoVisible = false;
+                videoOn = false;
             } else {
                 video.style.display = 'block';
                 icon.className = 'fa fa-eye';
-                videoVisible = true;
+                videoOn = true;
             }
         }
-        console.log('🎬 Simple video background loaded');
+        console.log('🎬 Video background loaded - TAMA EL PABLO');
         </script>
         
         @section('footer-scripts')
             <script src="/js/keyboard.polyfill.js" type="application/javascript"></script>
             <script>keyboardeventKeyPolyfill.polyfill();</script>
 
-            {!! Theme::js('vendor/jquery/jquery.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/sweetalert/sweetalert.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/bootstrap/bootstrap.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/slimscroll/jquery.slimscroll.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/adminlte/app.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/bootstrap-notify/bootstrap-notify.min.js?t={cache-version}') !!}
-            {!! Theme::js('vendor/select2/select2.full.min.js?t={cache-version}') !!}
-            {!! Theme::js('js/admin/functions.js?t={cache-version}') !!}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/jquery/jquery.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/sweetalert/sweetalert.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/bootstrap/bootstrap.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/slimscroll/jquery.slimscroll.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/adminlte/app.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/bootstrap-notify/bootstrap-notify.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('vendor/select2/select2.full.min.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
+            {## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php) Theme::js('js/admin/functions.js?t={cache-version}') ## 🔧 COMMAND 1: Fix Admin Layout (resources/views/layouts/admin.blade.php)}
             <script src="/js/autocomplete.js" type="application/javascript"></script>
 
             @if(Auth::user()->root_admin)
                 <script>
                     $('#logoutButton').on('click', function (event) {
                         event.preventDefault();
-
                         var that = this;
                         swal({
                             title: 'Do you want to log out?',
