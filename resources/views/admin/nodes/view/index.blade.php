@@ -103,7 +103,7 @@
                     </div>
                     @endif
                     <div class="col-sm-12">
-                        <div class="info-box bg-{{ $stats['disk']['css'] }}">
+                        <div class="info-box glass-card bg-{{ $stats['disk']['css'] }}">
                             <span class="info-box-icon"><i class="ion ion-ios-folder-outline"></i></span>
                             <div class="info-box-content" style="padding: 15px 10px 0;">
                                 <span class="info-box-text">Disk Space Allocated</span>
